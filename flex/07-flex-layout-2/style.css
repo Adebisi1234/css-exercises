@@ -26,3 +26,77 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Solution */
+/* Instructions
+  - The header text is size 32px and weight 900.
+- The header text is vertically centered and 16px from the edge of the screen.
+- The footer is pushed to the bottom of the screen (the footer may go _below_ the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter).
+- The footer text is centered horizontally and vertically.
+- The sidebar and cards take up all available space above the footer.
+- The sidebar is 300px wide (and it doesn't shrink).
+- The sidebar links are size 24px, are white, and do not have the underline text decoration.
+- The sidebar has 16px padding.
+- There is 32px padding around the 'cards' section.
+- The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.
+ */
+
+ .header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+ }
+
+
+ .footer {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+ }
+ .sidebar {
+  flex-basis: 300px;
+  padding: 16px;
+  flex: 1;
+ }
+
+ .sidebar a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+ }
+
+ .sidebar li {
+  margin-bottom: 16px;
+ }
+
+ .sidebar ul {
+  list-style-type: none;
+ }
+
+ .wrap {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 3;
+  gap: 8px;
+  padding-left: 36px;
+ }
+ .card {
+  padding: 32px;
+  flex-basis: 200px;
+  font-size: small;
+ }
+
+ body{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .container {
+  display: flex;
+  flex: 3;
+ }

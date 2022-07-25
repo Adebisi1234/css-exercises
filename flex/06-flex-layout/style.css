@@ -17,6 +17,7 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
+  padding: 8px 16px;
   background: #eee;
 }
 
@@ -35,6 +36,7 @@ li{
 .header,.footer {
   display: flex;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .footer{
@@ -45,16 +47,17 @@ li{
 ul{
   display: flex;
   gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.right-links{
-  padding-right: 40px;
-}
 .content{
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex: 1S;
 }
 
 a{
