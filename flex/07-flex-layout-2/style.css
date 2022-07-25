@@ -44,51 +44,48 @@ body {
  .header {
   font-size: 32px;
   font-weight: 900;
-  padding-left: 16px;
+  padding: 0 16px;
   display: flex;
-  flex-grow: 0;
   align-items: center;
  }
 
 
  .footer {
   display: flex;
-  justify-self: flex-end;
   align-items: center;
   justify-content: center;
-  flex-grow: 0;
  }
  .sidebar {
-  flex-basis: 300px;
   padding: 16px;
-  flex: 1;
+  flex-shrink: 0;
+  width: 300px;
  }
 
- .sidebar a {
+ a {
   font-size: 24px;
   color: white;
   text-decoration: none;
  }
 
- .sidebar li {
+li {
   margin-bottom: 16px;
  }
 
- .sidebar ul {
+ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
  }
 
  .wrap {
   display: flex;
-  flex-flow: row wrap;
-  flex: 3;
-  gap: 8px;
-  padding-left: 36px;
+  flex-wrap: wrap;
+  padding: 32px;
  }
  .card {
-  padding: 32px;
-  flex-basis: 200px;
-  font-size: small;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
  }
 
  body{
@@ -97,6 +94,6 @@ body {
  }
 
  .container {
+  flex: 1;
   display: flex;
-  flex: 3;
  }
